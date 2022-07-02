@@ -23,6 +23,7 @@ body{
   margin: 6rem 1rem;
   border-radius: 10px;
   height: 80vh;
+  overflow: hidden;
 }
 .Faq {
   padding: 1rem;
@@ -58,4 +59,25 @@ body{
   font-size: 1.5rem;
   transform: translate(-8px, 3px);
   
+}
+
+@media (max-width:800px){
+  body{
+    overflow: hidden;
+  }
+  .App {
+    grid-template-columns:auto;
+    margin: 1rem 1rem 0 1rem;
+    gap: 0rem;
+    overflow: hidden;
+  }
+  
+    .Faq, .title {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: 0;
+    }
+    .parag{
+      font-size: 0.8rem;
+    }
 }
